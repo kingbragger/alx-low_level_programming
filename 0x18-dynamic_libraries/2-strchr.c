@@ -1,34 +1,16 @@
 #include "main.h"
 
 /**
-
- * _strchr - Entry point
-
- * @s: input
-
- * @c: input
-
- * Return: Always 0 (Success)
-
+ * _isdigit - determine if numbers are 0 - 9
+ * @c: char to be checked
+ *
+ * Return: 0 or 1
  */
 
-char *_strchr(char *s, char c)
-
+int _isdigit(int c)
 {
-
-        int i = 0;
-
-
-        for (; s[i] >= '\0'; i++)
-
-        {
-
-                if (s[i] == c)
-
-                        return (&s[i]);
-
-        }
-
-        return (0);
-
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }
